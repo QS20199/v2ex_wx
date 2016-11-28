@@ -1,7 +1,7 @@
 var app = getApp()
 Page({
 	data: {
-		hotData: [],
+		listData: [],
 	},
 	//事件处理函数
 	bindViewTap: function() {
@@ -15,7 +15,7 @@ Page({
 			success: ret => {
 				console.log(ret)
 				this.setData({
-					hotData: ret.data
+					listData: ret.data
 				})
 			},
 			fail: error => {
