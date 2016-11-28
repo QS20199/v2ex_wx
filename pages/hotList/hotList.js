@@ -2,6 +2,7 @@ var app = getApp()
 Page({
 	data: {
 		listData: [],
+		isLoading: true
 	},
 	//事件处理函数
 	bindViewTap: function() {
@@ -11,9 +12,10 @@ Page({
 		wx.request({
 			url: 'https://www.v2ex.com/api/topics/hot.json',
 			success: ret => {
-				console.log(ret)
+				console.log("hotList: loaded", ret);
 				this.setData({
-					listData: ret.data
+					listData: ret.data,
+					isLoading: false
 				})
 			},
 			fail: error => {

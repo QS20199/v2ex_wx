@@ -2,6 +2,7 @@ var app = getApp()
 Page({
 	data: {
 		listData: [],
+		isLoading: true
 	},
 	//事件处理函数
 	bindViewTap: function() {
@@ -15,7 +16,8 @@ Page({
 			success: ret => {
 				console.log(ret)
 				this.setData({
-					listData: ret.data
+					listData: ret.data,
+					isLoading: false
 				})
 			},
 			fail: error => {
