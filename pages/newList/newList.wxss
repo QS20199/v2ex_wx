@@ -1,0 +1,24 @@
+.weui-media-box__hd_in-appmsg {
+	width: 20px;
+	height: 20px;
+}
+
+.weui-media-box_appmsg {
+	align-items: flex-start;
+	-webkit-align-items: flex-start;
+}
+
+.weui-media-box__title {
+	white-space: normal;
+	line-height: 24px;
+}
+
+.j-gray {
+	background: #f5f5f5;
+	display: inline;
+}
+
+.j-bold {
+	font-weight: bold;
+	display: inline;
+}
