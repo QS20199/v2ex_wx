@@ -1,0 +1,31 @@
+.weui-article__h1 {
+	font-weight: bold;
+}
+
+.weui-article__h3 {
+	color: gray;
+}
+
+.weui-media-box__thumb {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+
+.weui-article__section {
+	overflow: hidden;
+}
+
+.weui-article__h1 {
+	margin-bottom: 5px
+}
+
+.weui-media-box__title {
+	font-size: 14px;
+	white-space: normal;
+	margin-bottom: 0;
+}
+
+.weui-media-box__desc {
+	margin-bottom: 2px;
+}

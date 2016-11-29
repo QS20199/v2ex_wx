@@ -4,7 +4,7 @@
 			<view class="weui-panel__hd">最热的主题</view>
 			<view class="weui-panel__bd">
 				<block wx:for="{{listData}}">
-					<navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+					<navigator url="/pages/detail/detail?id={{item.id}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
 						<view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
 							<image class="weui-media-box__thumb" src="{{item.member.avatar_large}}" />
 						</view>
@@ -17,12 +17,10 @@
 					</navigator>
 				</block>
 			</view>
-		</view>
-
-		<view class="weui-loadmore" hidden="{{!isLoading}}">
-			<view class="weui-loading"></view>
-			<view class="weui-loadmore__tips">正在加载</view>
+			<view class="weui-loadmore" hidden="{{!isLoading}}">
+				<view class="weui-loading"></view>
+				<view class="weui-loadmore__tips">正在加载</view>
+			</view>
 		</view>
 	</view>
-
 </view>

@@ -1,7 +1,9 @@
 {
   "pages":[
     "pages/hotList/hotList",
-    "pages/newList/newList"
+    "pages/newList/newList",
+    "pages/detail/detail",
+    "pages/test/test"
   ],
   "tabBar": {
     "list": [{
@@ -14,6 +16,11 @@
       "text": "最新",
       "iconPath": "./images/gray.png",
       "selectedIconPath": "./images/green.png"
+    }, {
+      "pagePath": "pages/test/test",
+      "text": "test",
+      "iconPath": "./images/gray.png",
+      "selectedIconPath": "./images/green.png"
     }],
     "color": "#cbcbcb",
     "selectedColor": "#06ba08",
@@ -24,6 +31,7 @@
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "V2EX",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
   }
 }
