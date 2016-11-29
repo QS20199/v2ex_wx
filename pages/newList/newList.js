@@ -1,29 +1,6 @@
-var app = getApp()
-Page({
-	data: {
-		listData: [],
-		isLoading: true
-	},
-	//事件处理函数
-	bindViewTap: function() {
+let app = getApp();
+let defaultConfig = require('../common/list');
+defaultConfig.data.listTitle = '最新的主题';
+defaultConfig.cgiUrl = 'https://www.v2ex.com/api/topics/latest.json';
 
-	},
-	onLoad: function () {
-		console.log("index onLoad");
-
-		wx.request({
-			url: 'https://www.v2ex.com/api/topics/latest.json',
-			success: ret => {
-				console.log(ret)
-				this.setData({
-					listData: ret.data,
-					isLoading: false
-				})
-			},
-			fail: error => {
-				console.error(error);
-			}
-		})
-	}
-})
-
+Page(defaultConfig);
