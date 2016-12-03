@@ -10,7 +10,7 @@ Page({
 
 		this.animation = animation
 
-		animation.scale(10, 10).rotate(45).step()
+		animation.scale(5, 5).rotate(45).step()
 
 		this.setData({
 			animationData: animation.export()
