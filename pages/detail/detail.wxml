@@ -10,7 +10,7 @@
 				<!-- <view class="weui-article__title">{{detailData.node.title}} • {{detailData.member.username}}</view> -->
 				<view class="weui-article__section">
 					<view class="weui-article__h3">
-						<image class="weui-media-box__thumb" src="{{detailData.member.avatar_mini}}" />
+						<image class="weui-media-box__thumb" src="https:{{detailData.member.avatar_mini}}" />
 						{{detailData.node.title}} • {{detailData.member.username}}</view>
 					<view class="weui-article__p">{{detailData.content}}</view>
 				</view>

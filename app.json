@@ -2,25 +2,19 @@
   "pages":[
     "pages/hotList/hotList",
     "pages/newList/newList",
-    "pages/detail/detail",
-    "pages/test/test"
+    "pages/detail/detail"
   ],
   "tabBar": {
     "list": [{
       "pagePath": "pages/hotList/hotList",
       "text": "最热",
-      "iconPath": "./images/gray.png",
-      "selectedIconPath": "./images/green.png"
+      "iconPath": "images/gray.png",
+      "selectedIconPath": "images/green.png"
     }, {
       "pagePath": "pages/newList/newList",
       "text": "最新",
-      "iconPath": "./images/gray.png",
-      "selectedIconPath": "./images/green.png"
-    }, {
-      "pagePath": "pages/test/test",
-      "text": "test",
-      "iconPath": "./images/gray.png",
-      "selectedIconPath": "./images/green.png"
+      "iconPath": "images/gray.png",
+      "selectedIconPath": "images/green.png"
     }],
     "color": "#cbcbcb",
     "selectedColor": "#06ba08",
